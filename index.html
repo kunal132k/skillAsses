@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Skill Assesment</title>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body id="grad1">
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.1.1/chart.min.js'></script>
+    <div class="start_btn"><button>Start</button></div>
+    
+    <div class="info_box">
+        <div class="info_title">
+            <span>Welcome Participant</span>
+        </div>
+        <div class="info_list">
+            <div class="info">1. You will get 20 Questions from various topics</div>
+            <div class="info">2. Once you select your answer , you can't reselect</div>
+            <div class="info">
+                3. You will have only 15 seconds per each Questions
+            </div>
+            <div class="info">4. You can't select any option once time goes off</div>
+            <div class="info">5. Every correct answer will give you 25 points</div>
+        </div>
+        <div class="buttons">
+            <button class="quit">Exit Quiz</button>
+            <button class="restart">Continue</button>
+        </div>
+    </div>
+
+    <div class="quiz_box">
+        <header>
+            <div class="title"> Questions</div>
+            <div class="timer">
+                <div class="time_text">
+                    Time Left
+                </div>
+                <div class="timer_sec">
+                    15
+                </div>
+            </div>
+            <div class="time_line"></div>
+        </header>
+        <section>
+            <div class="que_text">
+            </div>
+            <div class="option_list">
+                <div class="option">
+                    <div class="icon tick"><i class="fas fa-check"></i></div>
+                </div>
+                <div class="option">
+                    <div class="icon cross"><i class="fas fa-times"></i></div>
+                </div>
+                <div class="option">
+                    <div class="icon cross"><i class="fas fa-times"></i></div>
+                </div>
+                <div class="option">
+                    <div class="icon cross"><i class="fas fa-times"></i></div>
+                </div>
+
+            </div>
+        </section>
+        <footer>
+            <div class="total_que">
+
+            </div>
+            <button class="next_btn">Next Que</button>
+        </footer>
+    </div>
+
+    <div class="result_box">
+        <h1> Topic Wise Assesment results </h1>
+        <hr>
+        <h3>Radar Chart</h3>
+        <canvas id="marksChart" ></canvas>
+        <hr>
+        <br> <br>
+        <h3>Doughnut Chart</h3>
+        <canvas id="myChart"  ></canvas>
+        <div class="buttons">
+            <button class="restart">Restart</button>
+            <button class="quit">Quit</button>
+        </div>
+    </div>
+</body>
+<script src="question.js"></script>
+<script src="script.js"></script>
+
+</html>
